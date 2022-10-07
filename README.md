@@ -111,16 +111,3 @@ var logger = new LoggerConfiguration()
         .Enrich.FromLogContext()
         .CreateLogger();
 As you can see above, we are using 2 sinks, one from configuration (File Sink) , and the other is using the Custom Sink defined using the WriteTo Custom Sink Extension method.
-
-Now let’s run and see the result on the console of the running
-
-Serilog Console with different colors according to logging level
-And if you open the logs folder, you can still see the File Sink writing the logs into rolling files:
-
-Serilog Log file
-Summary
-In this tutorial we have learned how to do logging with Serilog in ASP.NET Core Web API. Also we have learned how to write a middleware to handle all the exceptions and how to log them using Serilog.
-
-Also we got introduced to the different provided Serilog Sinks and we managed to create a new Custom Sink that would write to console and change the color according to the log level.
-
-I hope this tutorial introduced you properly to Serilog. Please feel free to leave me comments and share the tutorial with your network and colleagues.
